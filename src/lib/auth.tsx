@@ -3,6 +3,7 @@
  * Enterprise-grade security with role-based access control
  */
 
+import React from 'react'
 import { User, AuthSession } from '@/types'
 
 // Super Admin credentials (in production, use secure auth system)
