@@ -1,0 +1,22 @@
+{
+  "name": "yual-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Yual – Shopify-like e‑commerce platform (monorepo: frontend + backend)",
+  "workspaces": [
+    "yual",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm:dev:frontend\" \"npm:dev:backend\"",
+    "dev:frontend": "npm run dev --workspace yual",
+    "dev:backend": "npm run dev --workspace backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
